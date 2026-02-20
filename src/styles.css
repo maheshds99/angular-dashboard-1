@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+	--bg:#f7fbff;
+	--card:#ffffff;
+	--muted:#64748b;
+	--accent:#2563eb;
+	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+html,body { height:100%; margin:0; background:var(--bg); color:#0f1724; }
+*{ box-sizing:border-box; }
+
+/* App shell layout */
+.app-shell { min-height:100vh; display:flex; flex-direction:column; }
+.main-area { display:flex; flex:1; }
+.sidebar { width:220px; flex-shrink:0; }
+.content { flex:1; padding:18px; overflow:auto; }
+
+/* Small screens: collapse sidebar to top nav */
+@media (max-width:900px){
+	.main-area { flex-direction:column; }
+	.sidebar { width:100%; order:0; border-right:none; border-bottom:1px solid #e6eef7; }
+	.content { order:1; padding:12px; }
+}
+
+@media (max-width:600px){
+	.content { padding:10px; }
+}

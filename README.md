@@ -1,3 +1,22 @@
+# Analytics Dashboard (Angular v15 standalone)
+
+Quick start to run the dashboard locally.
+
+Requirements
+- Node.js (16+ recommended)
+- npm
+
+Install and run
+
+```bash
+cd "C:\Users\ADMIN\Documents\angular dashbboard\analytics-dashboard"
+npm install
+npx ng serve --open
+```
+
+Notes
+- The app uses standalone Angular components and Chart.js for charts.
+- If your system blocks script execution in PowerShell, run the commands in Command Prompt or set `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force`.
 # AnalyticsDashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
