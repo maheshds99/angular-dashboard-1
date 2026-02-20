@@ -1,16 +1,19 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
+  imports: [RouterModule],
   template: `
     <aside class="sidebar">
       <nav>
-        <a class="item active">Overview</a>
+        <a class="item" routerLink="/">Overview</a>
         <a class="item">Traffic</a>
         <a class="item">Sales</a>
         <a class="item">Users</a>
         <a class="item">Settings</a>
+        <a class="item" routerLink="/patched" routerLinkActive="active">Patching</a>
       </nav>
       <div class="footer">© 2025 Analytics</div>
     </aside>
