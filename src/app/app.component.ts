@@ -27,4 +27,6 @@ import { DashboardComponent } from './dashboard.component';
     .content { flex:1; padding:18px; overflow:auto; background: linear-gradient(180deg,#fbfdff,#f7f9fc); }
   `]
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'analytics-dashboard';
+}
